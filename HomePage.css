@@ -1,0 +1,114 @@
+@import url(sass.scss);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#e2e2e2 ;
+
+}
+
+.container10{
+ width: 940px;
+ margin: 50px auto 0;
+ background-color: #fff; 
+ padding: 15px;
+ border-radius: 5px; 
+ display: grid;
+ grid-template-columns: 1fr 1fr; 
+}
+
+.description{
+    margin-right: 50px ;
+}
+
+.description h1{
+    margin: 50px 0 10px 0;
+    font-weight: 300;
+}
+
+.description p{
+    font-size: 15px;
+}
+
+.description span{
+    margin-top:15px ;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 30px;
+    color: #353535;
+}
+
+.description button{
+    font-size: 18px;
+    padding: 15px 50px;
+    margin-top: 40px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    color: #fff;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 12);
+}
+
+.description .buy{
+    background-color: cornflowerblue;
+    transition-duration:0.5s;
+}
+
+.description .buy:hover{
+    box-shadow:10px 10px 25px 2px black;
+    text-shadow:5px 5px 10px black;
+}
+
+.description .cart{
+    background-color: #107886;
+    margin-left: 10px ;
+    transition-duration:0.5s;
+}
+
+.description .cart:hover{
+    box-shadow:10px 10px 25px 2px black;
+    text-shadow:5px 5px 10px black;
+}
+.xzoom-thumbs img{
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #ccc;
+}
+
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+} 
+    
+@media (max-width: 414px){
+    .banner{
+        display:none;
+    }
+}
+
+@media (min-width: 768px) {
+    .searchbar {
+    width: 30%;
+}
+}
+
+.mt-n1 {
+    margin-right: -30rem;
+  }
+
+.mt-n3{
+    margin-right: -5rem;
+    margin-left:4rem;
+}
+
+@media (max-width:1199px) {
+    .mt-n2{
+        margin-right:-4rem;
+    }
+}
